@@ -21,37 +21,37 @@ classDiagram
   class Usuario {
     -String nome
     -Conta conta
-    -Feature[] features
-    -Card card
-    -News[] news
+    -Recurso[] recursos
+    -Cartao cartao
+    -Novidades[] novidades
   }
 
   class Conta {
-    -String number
-    -String agency
-    -Number balance
-    -Number limit
+    -String numero
+    -String agencia
+    -Number saldo
+    -Number limite
   }
 
-  class Feature {
-    -String icon
-    -String description
+  class Recurso {
+    -String icone
+    -String descricao
   }
 
-  class Card {
-    -String number
-    -Number limit
+  class Cartao {
+    -String numero
+    -Number limite
   }
 
-  class News {
-    -String icon
-    -String description
+  class Novidades {
+    -String icone
+    -String descricao
   }
 
-  User "1" *-- "1" Account
-  User "1" *-- "N" Feature
-  User "1" *-- "1" Card
-  User "1" *-- "N" News
+  Usuario "1" *-- "1" Conta
+  Usuario "1" *-- "N" Recurso
+  Usuario "1" *-- "1" Cartao
+  Usuario "1" *-- "N" Novidades
 ```
 
  👊🤩
