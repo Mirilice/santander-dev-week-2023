@@ -18,7 +18,7 @@ O Figma foi utilizado para a abstração do domínio desta API, sendo útil na a
 
 ```mermaid
 classDiagram
-  class User {
+  class Usuario {
     -String name
     -Account account
     -Feature[] features
