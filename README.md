@@ -20,13 +20,13 @@ O Figma foi utilizado para a abstração do domínio desta API, sendo útil na a
 classDiagram
   class Usuario {
     -String nome
-    -Account account
+    -Conta conta
     -Feature[] features
     -Card card
     -News[] news
   }
 
-  class Account {
+  class Conta {
     -String number
     -String agency
     -Number balance
