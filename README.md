@@ -16,35 +16,35 @@ O Figma foi utilizado para a abstração do domínio desta API, sendo útil na a
 ## Diagrama de Classes (Domínio da API)
 
 ```mermaid
-classDiagram
-  class User {
-    -String name
-    -Account account
-    -Feature[] features
-    -Card card
-    -News[] news
+Diagrama
+  class Usuario {
+    -String nome
+    -Cont conta
+    -Recursos[] recursos
+    -Cartao cartao
+    -Novidades[] novidades
   }
 
-  class Account {
-    -String number
-    -String agency
-    -Number balance
-    -Number limit
+  class Conta {
+    -String numero
+    -String agencia
+    -Number saldo
+    -Number limite
   }
 
-  class Feature {
-    -String icon
-    -String description
+  class Recurso {
+    -String icone
+    -String descricao
   }
 
-  class Card {
-    -String number
-    -Number limit
+  class Cartao {
+    -String numero
+    -Number limite
   }
 
-  class News {
-    -String icon
-    -String description
+  class Novidades {
+    -String icone
+    -String descricao
   }
 
   User "1" *-- "1" Account
@@ -53,10 +53,4 @@ classDiagram
   User "1" *-- "N" News
 ```
 
-## IMPORTANTE
-
-Este projeto foi construído com um viés totalmente educacional para a DIO. Por isso, disponibilizamos uma versão mais robusta dele no repositório oficial da DIO:
-
-### [digitalinnovationone/santander-dev-week-2023-api](https://github.com/digitalinnovationone/santander-dev-week-2023-api)
-
-Lá incluímos todas os endpoints de CRUD, além de aplicar boas práticas (uso de DTOs e refinamento na documentação da OpenAPI). Sendo assim, caso queira um desafio/referência mais completa é só acessar 👊🤩
+ 👊🤩
