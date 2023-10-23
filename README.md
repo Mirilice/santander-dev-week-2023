@@ -13,38 +13,39 @@ Java RESTful API criada para a Santander Dev Week.
 
 O Figma foi utilizado para a abstração do domínio desta API, sendo útil na análise e projeto da solução.
 
+
 ## Diagrama de Classes (Domínio da API)
 
 ```mermaid
-Diagrama
-  classDiagram {
-    -String nome
-    -Cont conta
-    -Recursos[] recursos
-    -Cartao cartao
-    -Novidades[] novidades
+classDiagram
+  class User {
+    -String name
+    -Account account
+    -Feature[] features
+    -Card card
+    -News[] news
   }
 
-  class Conta {
-    -String numero
-    -String agencia
-    -Number saldo
-    -Number limite
+  class Account {
+    -String number
+    -String agency
+    -Number balance
+    -Number limit
   }
 
-  class Recurso {
-    -String icone
-    -String descricao
+  class Feature {
+    -String icon
+    -String description
   }
 
-  class Cartao {
-    -String numero
-    -Number limite
+  class Card {
+    -String number
+    -Number limit
   }
 
-  class Novidades {
-    -String icone
-    -String descricao
+  class News {
+    -String icon
+    -String description
   }
 
   User "1" *-- "1" Account
